@@ -5,57 +5,143 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-/* --- COMMONS --- */
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+/* --- /COMMONS --- */
+
 
 /* +++ MAIN +++ */
 .container-main{
-    width: 80vw;
+    width: 70vw;
     margin: 3vh auto;
 }
 
 .container-elemento{
+    margin: 0 1vw 2vh 0;
+}
 
+/* +++ Sezione Immagine +++ */
+.container-img{
+    width: calc(70vw / 3 - 1vw);
+    position: relative;
 }
 
 .img{
-    width: calc(80vw / 3 - 2vw);
+    width: calc(70vw / 3 - 1vw);
+}
+
+.container-heart{
+    height: 3vh;
+    width: 3vh;
+    background-color: white;
+    position: absolute;
+    top: 2%;
+    right: 0;
 }
 
 .heart::after{
     content: "\2764";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-tags{
+    font-size: 1vh;
+    position: absolute;
+    left: 0;
+    bottom: 3%;
+}
+
+.tag-sconto{
+    width: 2.5vw;
+    color: white;
+    background-color: rgb(223, 0, 48);
+    padding: 3% 6%;
+    margin-right: .3vw;
 }
 
 .tag-sconto::before{
-    content: "\2212";
+    content: "-";
 }
 
 .tag-sconto::after{
     content: "\0025";
 }
 
+.tag-sost{
+    width: 5vw;
+    color: white;
+    background-color: rgb(25, 134, 58);
+    padding: 3% 6%;
+}
+
+.tag-sost::after{
+    content: "Sostenibilit""\00E0";
+}
+/* --- /Sezione Immagine --- */
+
+
+/* +++ Sezione Testo +++ */
+.testo{
+    margin-top: 1vh;
+}
+
+.marca{
+    color: rgb(87, 87, 87);
+    font-size: 1vh;
+}
+
 .articolo{
     text-transform: uppercase;
+    font-size: 1.4vh;
 }
 
 .prezzo{
-    font-weight: bold;
-    color: red;
+    font-size: 1.1vh;
 }
 
 .prezzo::after{
     content: " \20AC";
+}
+
+.now{
+    font-weight: bold;
+    color: red;
+    font-size: 1.1vh;
+    margin-right: .3vw;
+}
+
+.now::after{
     font-weight: bold;
 }
 
-.ex-prezzo::after{
-    content: " \20AC";
+.ex{
     text-decoration: line-through;
 }
 
-/* --- MAIN --- */
+.ex::after{
+    text-decoration: line-through;
+}
+/* --- /Sezione Testo --- */
+/* --- /MAIN --- */
+
 
 /* +++ DEBUG +++ */
 .debug .container-main{
-    background-color: lightgray;
+    border: 1px solid pink;
 }
-/* --- DEBUG --- */
+/* --- /DEBUG --- */
