@@ -3,8 +3,59 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 /* --- COMMONS --- */
 
 /* +++ MAIN +++ */
+.container-main{
+    width: 80vw;
+    margin: 3vh auto;
+}
+
+.container-elemento{
+
+}
+
+.img{
+    width: calc(80vw / 3 - 2vw);
+}
+
+.heart::after{
+    content: "\2764";
+}
+
+.tag-sconto::before{
+    content: "\2212";
+}
+
+.tag-sconto::after{
+    content: "\0025";
+}
+
+.articolo{
+    text-transform: uppercase;
+}
+
+.prezzo{
+    font-weight: bold;
+    color: red;
+}
+
+.prezzo::after{
+    content: " \20AC";
+    font-weight: bold;
+}
+
+.ex-prezzo::after{
+    content: " \20AC";
+    text-decoration: line-through;
+}
+
 /* --- MAIN --- */
+
+/* +++ DEBUG +++ */
+.debug .container-main{
+    background-color: lightgray;
+}
+/* --- DEBUG --- */
