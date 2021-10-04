@@ -29,7 +29,7 @@
 }
 
 .container-elemento{
-    margin: 0 1vw 2vh 0;
+    margin: 0 .5vw 3.5vh .5vw;
 }
 
 /* +++ Sezione Immagine +++ */
@@ -53,14 +53,20 @@
 
 .heart::after{
     content: "\2764";
+    font-size: 2vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.heart:hover{
+    color: red;
+}
+
 .container-tags{
     font-size: 1vh;
+    font-weight: 500;
     position: absolute;
     left: 0;
     bottom: 3%;
@@ -68,9 +74,10 @@
 
 .tag-sconto{
     width: 2.5vw;
+    line-height: 2vh;
+    text-align: center;
     color: white;
     background-color: rgb(223, 0, 48);
-    padding: 3% 6%;
     margin-right: .3vw;
 }
 
@@ -84,9 +91,10 @@
 
 .tag-sost{
     width: 5vw;
+    line-height: 2vh;
+    text-align: center;
     color: white;
     background-color: rgb(25, 134, 58);
-    padding: 3% 6%;
 }
 
 .tag-sost::after{
@@ -97,7 +105,7 @@
 
 /* +++ Sezione Testo +++ */
 .testo{
-    margin-top: 1vh;
+    margin-top: .7vh;
 }
 
 .marca{
@@ -111,7 +119,7 @@
 }
 
 .prezzo{
-    font-size: 1.1vh;
+    font-size: 1.15vh;
 }
 
 .prezzo::after{
@@ -121,7 +129,6 @@
 .now{
     font-weight: bold;
     color: red;
-    font-size: 1.1vh;
     margin-right: .3vw;
 }
 
@@ -142,6 +149,6 @@
 
 /* +++ DEBUG +++ */
 .debug .container-main{
-    border: 1px solid pink;
+    outline: 1px solid pink;
 }
 /* --- /DEBUG --- */
