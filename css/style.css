@@ -42,6 +42,19 @@
     width: calc(70vw / 3 - 1vw);
 }
 
+.img-hover{
+    width: calc(70vw / 3 - 1vw);
+    display: none;
+}
+
+.container-img:hover .img{
+    display: none;
+}
+
+.container-img:hover .img-hover{
+    display: inline-block;
+}
+
 .container-heart{
     height: 3vh;
     width: 3vh;
@@ -115,7 +128,7 @@
 
 .articolo{
     text-transform: uppercase;
-    font-size: 1.34vh;
+    font-size: 1.32vh;
 }
 
 .prezzo{
