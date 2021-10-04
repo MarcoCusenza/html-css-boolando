@@ -69,7 +69,7 @@
     font-weight: 500;
     position: absolute;
     left: 0;
-    bottom: 3%;
+    bottom: 4%;
 }
 
 .tag-sconto{
@@ -109,17 +109,17 @@
 }
 
 .marca{
-    color: rgb(87, 87, 87);
-    font-size: 1vh;
+    color: rgb(37, 37, 37);
+    font-size: 1.1vh;
 }
 
 .articolo{
     text-transform: uppercase;
-    font-size: 1.4vh;
+    font-size: 1.34vh;
 }
 
 .prezzo{
-    font-size: 1.15vh;
+    font-size: 1.12vh;
 }
 
 .prezzo::after{
